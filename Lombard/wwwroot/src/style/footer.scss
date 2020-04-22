@@ -1,0 +1,63 @@
+@import "config";
+
+footer{
+    padding:40px 0 100px 0;
+    background:$blue;
+    .wr{
+        .top{
+            display:flex;
+            justify-content:space-between;
+            h2{
+                color:white;
+                font-family:$font_bold;
+                margin:10px 0;
+            }
+            p{
+                color:$blue_grey;
+                font-family:$font;
+                margin:25px 0;
+            }
+            .left{
+                display:flex;
+                flex-direction:column;
+                align-items:flex-start;
+                a{
+                    margin:10px 0;
+                }
+            }
+            .center{
+                display:flex;
+                flex-direction:column;
+                align-items:flex-start;
+                .network{
+                    display:flex;
+                    width:100%;
+                    justify-content:flex-start;
+                    svg{
+                        width:50px;
+                        height:auto;
+                        margin:25px 15px;
+                        transition:all 0.3s ease;
+                        path{
+                            fill:$white;
+                            transition:all 0.3s ease;
+                        }
+                        &:hover{
+                            path{
+                                fill:$orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            margin-top:30px;
+            p{
+                color:$blue_grey;
+                margin:25px 0;
+                font-size:14px;
+            }
+        }
+    }
+}

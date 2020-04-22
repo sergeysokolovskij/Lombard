@@ -1,0 +1,96 @@
+@import "config";
+
+header{
+    background:$white;
+    border-bottom:4px solid $blue;
+    position: relative;
+    .wr{
+        .top{
+            padding:20px 0;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .lang{
+                button{
+                    font-size:13px;
+                    background:none;
+                    padding-bottom:3px;
+                    transition:all 0.3s ease-in;
+                    color:$blue;
+                    border-bottom: 3px solid transparent;
+                    margin:-3px 3px;
+                    cursor: pointer;
+                    &:hover{
+                        border-color:$orange;
+                    }
+                }
+                .active{
+                    border-bottom:3px solid $orange;
+                }
+            }
+            .links{
+                a{
+                    color:$blue;
+                    margin:0 8px;
+                    font-size:14px;
+                    transition:all 0.3s ease-in;
+                    border-bottom: 3px solid transparent;
+                    padding-bottom:3px;
+                    cursor: pointer;
+                    &:hover{
+                        border-color:$orange;
+                    }
+                }
+            }
+            .number{
+                a{
+                    color:$blue;
+                    font-size:18px;
+                    font-family:$font_bold;
+                }
+            }
+        }
+        .bottom{
+            padding:10px 0;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .center{
+                display:flex;
+                a{
+                    border-right:1px solid rgba($grey, $alpha: .3);
+                    padding:15px 40px;
+                    height:100%;
+                    box-sizing:border-box;
+                    transition:all 0.3s ease;
+                    &:last-child{
+                        border-right:unset;
+                    }
+                    &:hover{
+                        background:$blue;
+                        color:$white;
+                        .title{
+                            color:$white;
+                        }
+                    }
+                }
+            }
+            a{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                color:$blue;
+                i{
+                    font-size:50px;
+                    margin:10px 0;
+                }
+                .title{
+                    font-weight:bold;
+                    font-family:$font_bold;
+                    color:$blue;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
